@@ -7,8 +7,8 @@ class driver(Scene):
         #self.camera.background_color=GRAY_E
         
         # Intro
-        RED_LOGO = SVGMobject(r"C:\Users\alber\Desktop\Code\manim\MPC Limits\rMPC.svg", stroke_color=GRAY_E, width=7, fill_color='#C2344E')
-        PINK_LOGO= SVGMobject(r"C:\Users\alber\Desktop\Code\manim\MPC Limits\pMPC.svg", stroke_color=GRAY_E, width=7, fill_color='#F88081')
+        RED_LOGO = SVGMobject(r".\rMPC.svg", stroke_color=GRAY_E, width=7, fill_color='#C2344E')
+        PINK_LOGO= SVGMobject(r".\pMPC.svg", stroke_color=GRAY_E, width=7, fill_color='#F88081')
         RED_LOGO.align_to(PINK_LOGO, LEFT)
         LOGO = VGroup(RED_LOGO, PINK_LOGO)
 
@@ -64,8 +64,8 @@ class driver(Scene):
 
         self.play(FadeOut(plane), FadeOut(table), FadeOut(func), FadeOut(pt), FadeOut(lim))
 
-        car = SVGMobject(r"C:\Users\alber\Desktop\Code\manim\MPC Limits\car.svg", stroke_color=PURE_RED, stroke_width=8, width=4, fill_color=None)
-        shop = SVGMobject(r"C:\Users\alber\Desktop\Code\manim\MPC Limits\shop.svg", stroke_color=PURE_BLUE, stroke_width=8, width=4, fill_color=None)
+        car = SVGMobject(r".\car.svg", stroke_color=PURE_RED, stroke_width=8, width=4, fill_color=None)
+        shop = SVGMobject(r".\shop.svg", stroke_color=PURE_BLUE, stroke_width=8, width=4, fill_color=None)
 
         car.shift(LEFT*4)
         shop.shift(RIGHT*4)
